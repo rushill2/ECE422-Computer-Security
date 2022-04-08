@@ -1,0 +1,25 @@
+Cite sources you conslulted for this MP here:
+
+https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/
+https://stackoverflow.com/questions/9596652/how-to-escape-apostrophe-in-mysql
+http://www.unixwiz.net/techtips/sql-injection.html#other
+https://securityonline.info/hasherbasher-sql-injection-brute-forced-md5-hash/
+https://www.geeksforgeeks.org/md5-hash-python/
+https://portswigger.net/web-security/sql-injection/union-attacks
+https://portswigger.net/web-security/sql-injection/cheat-sheet
+https://www.md5hashgenerator.com/
+https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html
+https://html5sec.org/#56
+https://stackoverflow.com/questions/37435077/execute-javascript-for-xss-without-script-tags
+https://stackoverflow.com/questions/1236360/how-do-i-replace-the-entire-html-node-using-jquery
+https://api.jquery.com/jquery.ajax/
+https://stackoverflow.com/questions/2833951/how-do-i-catch-an-ajax-query-post-error
+https://stackoverflow.com/questions/10306129/javascript-get-element-by-name%3E
+https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie%3E
+https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
+https://stackoverflow.com/questions/10306129/javascript-get-element-by-name
+https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
+https://stackoverflow.com/questions/542232/in-javascript-how-can-i-perform-a-global-replace-on-string-with-a-variable-insi
+https://stackoverflow.com/questions/1334083/how-to-change-href-attribute-of-a-link-using-jquery
+https://stackoverflow.com/questions/9869540/jquery-get-link-by-class-or-selector
+https://stackoverflow.com/questions/13291272/how-to-change-all-links-with-javascript
